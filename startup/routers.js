@@ -9,9 +9,7 @@ const returns=require('../routes/returns_api');
 module.exports = function (app) {
 
 
-    app.get('/',function(req,res){
-        res.send("Node running");
-    });
+    
 
     app.use(express.json());
 
