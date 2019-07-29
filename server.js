@@ -8,8 +8,10 @@ require('./startup/logging')();
 
 require('./startup/db')();
     // app.listen(process.env.PORT || 3000);
-    const PORT = process.env.PORT||'8080';
-    app.listen(PORT);
+    const port = process.env.PORT||'8080';
+    app.listen(port, function() {
+        console.log("App is running on port " + port);
+    });
     // app.listen(process.env.PORT || 3000);
 
 console.log('Node Running for Movies API');
