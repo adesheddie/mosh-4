@@ -30,6 +30,10 @@ module.exports = function (app) {
 
     app.use('/api/users', user);
 
+    app.use('/',function(req,res,next){
+        res.send("Node running");
+        next();
+    });
     
     app.use((req, res, next) => {
         const error = new Error('Route Not Found');
