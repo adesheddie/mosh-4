@@ -1,3 +1,3 @@
 {
-    "dbPath":"mongodb://localhost/Mosh_Test"
+    "dbPath":"mongodb://adesheddie:gaming619@ds241288.mlab.com:41288/circleci-test"
 }
