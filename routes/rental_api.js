@@ -19,7 +19,7 @@ router.get('/', function (req, res, next) {
         })
 
 });
-
+///
 router.post('/',auth, function (req, res, next) {
 
     const { error } = validateRental(req.body);
