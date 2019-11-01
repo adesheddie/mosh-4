@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
 describe('Genres APIs', () => {
 
     beforeEach(async () => {
-        
+        // await server.close();
         server = require('../../server');
 
     });

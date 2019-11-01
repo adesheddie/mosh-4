@@ -14,7 +14,7 @@ describe('Return API', () => {
     let genreId = mongoose.Types.ObjectId();
     let movie1;
     beforeEach(async () => {
-        
+        // await server.close();
         server = require('../../server');
         movie1=new Movie({
             _id:movie,
@@ -53,6 +53,7 @@ describe('Return API', () => {
     afterEach(async () => {
         await Rental.remove({});
         await Movie.remove({});
+        // await server.close();
         // if(server)   await server.close();
     });
 

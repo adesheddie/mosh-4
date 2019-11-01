@@ -2,10 +2,14 @@ const express = require('express');
 const app = express();
 const Joi = require('joi');
 Joi.objectId = require('joi-objectid')(Joi);
-const port = process.env.PORT||8080;
-app.listen(port, function() {
-    console.log("App is running on port " + port);
-});
+const port = process.env.PORT||3001;
+
+if (process.env.NODE_ENV !== 'test') {
+    app.listen(port, function() {
+        console.log("App is running on port " + port);
+    });
+  }
+
 
 require('./startup/routers')(app);
 require('./startup/logging')();
