@@ -3,7 +3,7 @@ const router = express.Router();
 const User = require('../models/users');
 const bcrypt = require('bcryptjs');
 const auth=require('../middlewares/auth');
-// trying auto deploy
+// trying auto deploy, now test env
 router.post('/', function (req, res, next) {
 
     User.findOne({ email: req.body.email })
