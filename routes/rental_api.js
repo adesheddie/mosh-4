@@ -54,7 +54,11 @@ router.post('/',auth, function (req, res, next) {
                         }
 
                     });
+<<<<<<< HEAD
 //
+=======
+///
+>>>>>>> dev
                     try {
                         new fawn.Task()
                             .save('rentals', rental)
